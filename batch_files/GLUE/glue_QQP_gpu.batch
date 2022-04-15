@@ -1,0 +1,22 @@
+#!/bin/sh
+#SBATCH --partition=gpuextralong
+#SBATCH --time=504:00:00
+#SBATCH --gres=gpu:4
+#SBATCH --mem-per-gpu=32000
+#SBATCH --job-name=QQP
+#SBATCH --err=QQP.err 
+#SBATCH --out=QQP.out 
+#SBATCH --mail-user=kangkangsome@gmail.com    # where send info about job
+#SBATCH --mail-type=ALL              # what to send, valid type values are NONE, BEGIN, END, FAIL, REQUEUE, ALL
+
+/bin/hostname
+srun -l /bin/hostname
+srun -l /bin/pwd
+ml load Python/3.6.8-foss-2019a
+cd /home/kangchen/Rehrearsal_TransferLearning/python_script/BERT-GLUE/
+source glueEnv/bin/activate
+python transformers/examples/pytorch/text-classification/run_glue.py --model_name_or_path bert-large-cased --task_name qqp --do_train --do_eval --num_train_epochs 40 --overwrite_output_dir --output_dir output/QQP/BERT/
+python transformers/examples/pytorch/text-classification/run_glue.py --model_name_or_path albert-large-v2 --task_name qqp --do_train --do_eval --num_train_epochs 40 --overwrite_output_dir --output_dir output/QQP/ALBERTRT/
+python transformers/examples/pytorch/text-classification/run_glue.py --model_name_or_path roberta-large --task_name qqp --do_train --do_eval --num_train_epochs 40 --overwrite_output_dir --output_dir output/QQP/RoBERTa/
+python transformers/examples/pytorch/text-classification/run_glue.py --model_name_or_path squeezebert/squeezebert-uncased --task_name qqp --do_train --do_eval --num_train_epochs 40 --overwrite_output_dir --output_dir output/QQP/SqueezeBERT/
+python transformers/examples/pytorch/text-classification/run_glue.py --model_name_or_path microsoft/deberta-v3-large --task_name qqp --do_train --do_eval --num_train_epochs 40 --overwrite_output_dir --output_dir output/QQP/DeBERTa/
