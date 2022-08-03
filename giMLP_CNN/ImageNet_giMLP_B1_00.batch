@@ -1,0 +1,18 @@
+#!/bin/sh
+#SBATCH --partition=gpuextralong
+#SBATCH --time=504:00:00
+#SBATCH --gres=gpu:8
+#SBATCH --mem-per-gpu=32000
+#SBATCH --job-name=giMLP_B1_00
+#SBATCH --err=giMLP_B1_A_00.err 
+#SBATCH --out=giMLP_B1_00.out 
+#SBATCH --mail-user=kangchen@fel.cvut.cz    # where send info about job
+#SBATCH --mail-type=ALL              # what to send, valid type values are NONE, BEGIN, END, FAIL, REQUEUE, ALL
+
+/bin/hostname
+srun -l /bin/hostname
+srun -l /bin/pwd
+ml load Python/3.6.8-foss-2019a
+cd /home/kangchen/Rehrearsal_TransferLearning/python_script/giMLP_CNN/
+source giTransEnv/bin/activate
+python -m torch.distributed.launch --nnodes=1 --nproc_per_node=8 --use_env main.py --model CycleMLP_B1 --batch-size 128 --ratio_inhi 0.0 --dist_eval --data-path ./path/to/imagenet/ --output_dir ./B1/thre_00/
