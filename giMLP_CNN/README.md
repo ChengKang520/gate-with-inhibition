@@ -1,5 +1,5 @@
 
-## CycleMLP: A MLP-like Architecture for Dense Prediction (ICLR 2022 Oral)
+## giMLPs: Gate with Inhibition Mechanism in MLPs
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 ![Python 3.8](https://img.shields.io/badge/python-3.8-green.svg)
@@ -7,26 +7,17 @@
 This is a PyTorch implementation of the paper [CycleMLP: A MLP-like Architecture for Dense Prediction](https://arxiv.org/abs/2107.10224).
 
 ## Updates
-
-- (29/01/2022) CycleMLP is accepted by ICLR 2022 as an **oral presentation**.:fire::fire::fire:
-- (22/07/2021) Initial release.
+- (05/08/2022) Initial release.
 
 
 
 ## Model Zoo
 
-We provide CycleMLP models pretrained on ImageNet 2012.
-
 | Model                | Parameters | FLOPs    | Top 1 Acc. | Download |
 | :------------------- | :--------- | :------- | :--------- | :------- |
-| CycleMLP-B1          | 15M        |  2.1G    |  78.9%     |[model](https://github.com/ShoufaChen/CycleMLP/releases/download/v0.1/CycleMLP_B1.pth)|
-| CycleMLP-B2          | 27M        |  3.9G    |  81.6%     |[model](https://github.com/ShoufaChen/CycleMLP/releases/download/v0.1/CycleMLP_B2.pth)|
-| CycleMLP-B3          | 38M        |  6.9G    |  82.4%     |[model](https://github.com/ShoufaChen/CycleMLP/releases/download/v0.1/CycleMLP_B3.pth)|
-| CycleMLP-B4          | 52M        |  10.1G   |  83.0%     |[model](https://github.com/ShoufaChen/CycleMLP/releases/download/v0.1/CycleMLP_B4.pth)|
-| CycleMLP-B5          | 76M        |  12.3G   |  83.2%     |[model](https://github.com/ShoufaChen/CycleMLP/releases/download/v0.1/CycleMLP_B5.pth)|
-| CycleMLP-T           | 28M        |  4.4G    |  81.3%     |[model](https://github.com/ShoufaChen/CycleMLP/releases/download/v0.1/CycleMLP_tiny.pth)|
-| CycleMLP-S           | 50M        |  8.5G    |  82.9%     |[model](https://github.com/ShoufaChen/CycleMLP/releases/download/v0.1/CycleMLP_small.pth)|
-| CycleMLP-B           | 88M        |  15.2G   |  83.4%     |[model](https://github.com/ShoufaChen/CycleMLP/releases/download/v0.1/CycleMLP_base.pth)|
+| CycleMLP-B1(0% Inhibition)          | 15M        |  2.1G    |  78.9%     |[model](https://github.com/ShoufaChen/CycleMLP/releases/download/v0.1/CycleMLP_B1.pth)|
+| CycleMLP-B1(10% Inhibition)          | 15M        |  2.1G    |  78.8%     |[model](https://github.com/ShoufaChen/CycleMLP/releases/download/v0.1/CycleMLP_B1.pth)|
+| CycleMLP-B1(30% Inhibition)          | 15M        |  2.1G    |  76.9%     |[model](https://github.com/ShoufaChen/CycleMLP/releases/download/v0.1/CycleMLP_B1.pth)|
 
 ## Usage
 
