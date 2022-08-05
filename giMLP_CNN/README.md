@@ -4,14 +4,6 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 ![Python 3.8](https://img.shields.io/badge/python-3.8-green.svg)
 
-
-
-<p align="middle">
-  <img src="figures/teaser.png" height="300" />
-  &nbsp;&nbsp;&nbsp;&nbsp;
-  <img src="figures/flops.png" height="300" />
-</p>
-
 This is a PyTorch implementation of the paper [CycleMLP: A MLP-like Architecture for Dense Prediction](https://arxiv.org/abs/2107.10224).
 
 ## Updates
@@ -78,9 +70,9 @@ The directory structure is:
 ```
 
 ### Evaluation
-To evaluate a pre-trained CycleMLP-B5 on ImageNet val with a single GPU run:
+To evaluate a pre-trained CycleMLP-B1 on ImageNet val with a single GPU run:
 ```
-python main.py --eval --model giCycleMLP_B5 --resume path/to/giCycleMLP_B1.pth --data-path /path/to/imagenet
+python main.py --eval --model giCycleMLP_B1 --resume path/to/giCycleMLP_B1.pth --data-path /path/to/imagenet
 ```
 
 
@@ -89,8 +81,9 @@ python main.py --eval --model giCycleMLP_B5 --resume path/to/giCycleMLP_B1.pth -
 To train giCycleMLP-B1 with 30% inhibition level on ImageNet on a single node with 8 gpus for 300 epochs run:
 ```
 python -m torch.distributed.launch --nnodes=1 --nproc_per_node=8 --use_env main.py --model giCycleMLP_B1 --batch-size 128 --ratio_inhi 0.0 --dist_eval --data-path ./path/to/imagenet/ --output_dir ./B1/thre_00/```
+
 ### Acknowledgement
-This code is based on [DeiT](https://github.com/facebookresearch/deit) and [pytorch-image-models](https://github.com/rwightman/pytorch-image-models). Thanks for their wonderful works
+This code is based on [CycleMLP](https://github.com/ShoufaChen/CycleMLP), [DeiT](https://github.com/facebookresearch/deit) and [pytorch-image-models](https://github.com/rwightman/pytorch-image-models). Thanks for their wonderful works
 
 ## License
 
