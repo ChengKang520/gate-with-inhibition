@@ -79,8 +79,8 @@ python main.py --eval --model giCycleMLP_B1 --resume path/to/giCycleMLP_B1.pth -
 ### Training
 
 To train giCycleMLP-B1 with 30% inhibition level on ImageNet on a single node with 8 gpus for 300 epochs run:
-```
-python -m torch.distributed.launch --nnodes=1 --nproc_per_node=8 --use_env main.py --model giCycleMLP_B1 --batch-size 128 --ratio_inhi 0.0 --dist_eval --data-path ./path/to/imagenet/ --output_dir ./B1/thre_00/```
+```python -m torch.distributed.launch --nnodes=1 --nproc_per_node=8 --use_env main.py --model giCycleMLP_B1 --batch-size 128 --ratio_inhi 0.0 --dist_eval --data-path ./path/to/imagenet/ --output_dir ./B1/thre_00/```
+
 
 ### Acknowledgement
 This code is based on [CycleMLP](https://github.com/ShoufaChen/CycleMLP), [DeiT](https://github.com/facebookresearch/deit) and [pytorch-image-models](https://github.com/rwightman/pytorch-image-models). Thanks for their wonderful works
