@@ -15,9 +15,9 @@ This is a PyTorch implementation of the paper [giMLPs: Gate with Inhibition Mech
 
 | Model                | Parameters | FLOPs    | Top 1 Acc. | Download |
 | :------------------- | :--------- | :------- | :--------- | :------- |
-| CycleMLP-B1(0% Inhibition)          | 15M        |  2.1G    |  78.9%     |[model](https://github.com/ShoufaChen/CycleMLP/releases/download/v0.1/CycleMLP_B1.pth)|
-| CycleMLP-B1(10% Inhibition)          | 15M        |  2.1G    |  78.8%     |[model](https://github.com/ShoufaChen/CycleMLP/releases/download/v0.1/CycleMLP_B1.pth)|
-| CycleMLP-B1(30% Inhibition)          | 15M        |  2.1G    |  76.9%     |[model](https://github.com/ShoufaChen/CycleMLP/releases/download/v0.1/CycleMLP_B1.pth)|
+| giCycleMLP-B1(0% Inhibition)          | 15M        |  2.1G    |  78.9%     |[model](https://github.com/ShoufaChen/CycleMLP/releases/download/v0.1/CycleMLP_B1.pth)|
+| giCycleMLP-B1(10% Inhibition)          | 15M        |  2.1G    |  78.8%     |[model](https://github.com/ShoufaChen/CycleMLP/releases/download/v0.1/CycleMLP_B1.pth)|
+| giCycleMLP-B1(30% Inhibition)          | 15M        |  2.1G    |  76.9%     |[model](https://github.com/ShoufaChen/CycleMLP/releases/download/v0.1/CycleMLP_B1.pth)|
 
 ## Usage
 
@@ -61,7 +61,7 @@ The directory structure is:
 ```
 
 ### Evaluation
-To evaluate a pre-trained CycleMLP-B1 on ImageNet val with a single GPU run:
+To evaluate a pre-trained giCycleMLP-B1 on ImageNet val with a single GPU run:
 ```
 python main.py --eval --model giCycleMLP_B1 --resume path/to/giCycleMLP_B1.pth --data-path /path/to/imagenet
 ```
