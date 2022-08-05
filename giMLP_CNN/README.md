@@ -1,5 +1,5 @@
 
-## giMLPs: Gate with Inhibition Mechanism in MLPs
+## giMLPs On ImageNet Classification
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 ![Python 3.8](https://img.shields.io/badge/python-3.8-green.svg)
@@ -41,7 +41,8 @@ pip install -e .
 
 ### Data preparation
 
-Download and extract ImageNet train and val images from http://image-net.org/.
+Download and extract ImageNet train and val images from http://image-net.org/. You can run the batch file: ```sbatch imagenet_dowload.batch```
+
 The directory structure is:
 
 ```
