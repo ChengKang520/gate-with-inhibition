@@ -211,7 +211,7 @@ There are several fine-tuning strategies on using Gate With Inhibition mechanism
 ```
 
 ### Run DeBERTa experiments from command line
-For glue tasks, run task
+For GLUE tasks, you can run below batch file:
 
 ``` bash
 #SBATCH --time=72:00:00
