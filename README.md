@@ -11,5 +11,5 @@ RoBERTa iterates on BERT's pretraining procedure, including training the model l
 ### What's New:
 
 - (05/08/2022) Added [giMLPs On ImageNet Classification](/giMLP_CNN/README.md) and [# giMLP on Transformers On Downstream Language Tasks Fine-Tuning 
-](/giMLP_CNN/README.pretraining.md).
+](/giMLP_Transformers/README.md).
 - (04/08/2022) Initial release.
