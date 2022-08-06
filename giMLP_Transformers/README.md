@@ -29,7 +29,7 @@ You can obtain all the six benchmarks from Tsinghua Cloud or Google Drive. All t
 
 - SWAG is a large-scale adversarial dataset for the task of grounded commonsense inference, which unifies natural language inference and physically grounded reasoning. SWAG consists of 113k multiple choice questions about grounded situations.
 
-- CoNLL 2003 [34] is an English dataset consisting of text from a wide variety of sources. It has 4 types of named entities.
+- CoNLL 2003 is an English dataset consisting of text from a wide variety of sources. It has 4 types of named entities.
 
 ### Pre-trained Models Used Here 
 
