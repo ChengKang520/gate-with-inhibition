@@ -1,4 +1,4 @@
-
+<img src="../figures/palm.gif" width="450px"></img>
 # giMLP on Transformers On Downstream Language Tasks Fine-Tuning 
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
