@@ -218,8 +218,6 @@ For glue tasks, run task
 #SBATCH --job-name=giDeBERTa30_Last6
 #SBATCH --err=giDeBERTa30_Last6.err 
 #SBATCH --out=giDeBERTa30_Last6.out 
-#SBATCH --mail-user=kangkangsome@gmail.com    # where send info about job
-#SBATCH --mail-type=ALL              # what to send, valid type values are NONE, BEGIN, END, FAIL, REQUEUE, ALL
 
 /bin/hostname
 srun -l /bin/hostname
