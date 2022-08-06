@@ -223,7 +223,7 @@ For glue tasks, run task
 srun -l /bin/hostname
 srun -l /bin/pwd
 ml PyTorch/1.10.0-foss-2021a-CUDA-11.3.1
-cd /home/kangchen/Rehrearsal_TransferLearning/python_script/BERT-GLUE/
+cd /home/user/gate_inhibition/python_script/DeBERTa-GLUE/
 source EnvAMD/bin/activate
 python transformers/examples/pytorch/text-classification/run_glue.py --model_name_or_path microsoft/deberta-v3-large --task_name cola --do_train --do_eval --num_train_epochs 10 --overwrite_output_dir --output_dir output_final/DeBERTa_30_on_Last6/CoLA/
 python transformers/examples/pytorch/text-classification/run_glue.py --model_name_or_path microsoft/deberta-v3-large --task_name mrpc --do_train --do_eval --num_train_epochs 10 --overwrite_output_dir --output_dir output_final/DeBERTa_30_on_Last6/MRPC/
