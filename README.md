@@ -6,7 +6,7 @@ giMLPs: Gate with Inhibition Mechanism in MLPs
 
 ## What's New:
 
-- (05/08/2022) Added manuals about [giMLPs On ImageNet Classification](/giMLP_CNN/README.md) and [giMLP on Transformers On Downstream Language Tasks Fine-Tuning 
+- (05/08/2022) Added manuals about [giMLPs On ImageNet Classification](/giMLP_CNN/README.md) and [giMLPs on Transformers On Downstream Language Tasks Fine-Tuning 
 ](/giMLP_Transformers/README.md).
 - (04/08/2022) Initial release.
 
@@ -24,4 +24,4 @@ The major challenge for fine-tuning downstream NLU tasks is to select proper fea
 
 
 
-## [giMLP on Transformers On Downstream Language Tasks Fine-Tuning](/giMLP_Transformers/README.md)
+## [giMLPs on Transformers On Downstream Language Tasks Fine-Tuning](/giMLP_Transformers/README.md)
