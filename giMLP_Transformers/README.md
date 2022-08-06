@@ -47,7 +47,7 @@ You can obtain all the six benchmarks from Tsinghua Cloud or Google Drive. All t
 ## Insert Gate With Inhibition Into DeBERTaV3
 
 
-### Change the config.json of DeBERTaV3 Model To
+### Change the config.json of DeBERTaV3 To
 
 There are several fine-tuning strategies on using Gate With Inhibition mechanism:  
 - {"gi_key_side": true,} means inserting gi into attention block's Key side is TRUE; 
