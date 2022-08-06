@@ -30,9 +30,12 @@ We insert gate with inhibition into these below four language models. You can do
 
 
 
-## Requirements
+## Get Started
+- Install Python 3.9, PyTorch 1.9.0 and packages ``` pip install -r requirements.txt ```.
+- Download data. You can obtain all the six benchmarks from Tsinghua Cloud or Google Drive. All the datasets are well pre-processed and can be used easily.
+Train the model. We provide the experiment scripts of all benchmarks under the folder ./scripts. You can reproduce the experiment results by:
 
-``` Shell pip install -r requirements.txt ``` 
+ 
 
 
 
