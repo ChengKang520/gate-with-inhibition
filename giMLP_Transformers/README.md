@@ -12,7 +12,7 @@ This is a PyTorch implementation of the paper [giMLPs: Gate with Inhibition Mech
 
 # Pre-trained Models Used Here 
 
-Our pre-trained models are packaged into zipped files. You can download them from our [releases](https://huggingface.co/models?search=microsoft%2Fdeberta), or download an individual model via the links below:
+We insert gate with inhibition into these below four language models. You can download them from the links below:
 
 |Model        | Vocabulary Size|Backbone Parameters(M)| Hidden Size | Layers|  Attention Heads|
 |-------------|------|---------|-----|-----|---------|
@@ -31,14 +31,8 @@ Our pre-trained models are packaged into zipped files. You can download them fro
 
 
 ## Requirements
-- Linux system, e.g. Ubuntu 18.04LTS
-- CUDA 10.0
-- pytorch 1.3.0
-- python 3.6
-- bash shell 4.0
-- curl
-- docker (optional)
-- nvidia-docker2 (optional)
+
+``` Shell pip install -r requirements.txt ``` 
 
 
 
