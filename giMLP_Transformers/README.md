@@ -10,9 +10,37 @@ This is a PyTorch implementation of the paper [giMLPs: Gate with Inhibition Mech
 - (05/08/2022) Initial release.
 
 
-# Pre-trained Models Used Here 
 
-We insert gate with inhibition into these below four language models. You can download them from the links below:
+# Try Gate With Inhbition When Fine-Tuning
+
+
+
+## Get Started
+
+### Environment
+Install Python 3.9, PyTorch 1.9.0 and packages ``` pip install -r requirements.txt ```.
+
+### Experimental Data 
+You can obtain all the six benchmarks from Tsinghua Cloud or Google Drive. All the datasets are well pre-processed and can be used easily.
+- GLUE. The General Language Understanding Evaluation (GLUE) benchmark is a collection
+of nine natural language understanding (NLU) tasks. As shown in Table 7, it includes question
+answering [39], linguistic acceptability [40], sentiment analysis [41], text similarity [42], paraphrase
+detection [43], and natural language inference (NLI) [15, 44, 45, 46, 47, 48]. The diversity of the
+tasks makes GLUE very suitable for evaluating the generalization and robustness of NLU models.
+
+- SQuAD v1.1/v2.0 is the Stanford Question Answering Dataset (SQuAD) v1.1 and v2.0 [16, 39], two
+popular machine reading comprehension benchmarks from approximately 500Wikipedia articles with
+questions and answers obtained by crowdsourcing. The SQuAD v2.0 dataset includes unanswerable
+questions about the same paragraphs.
+
+- SWAG is a large-scale adversarial dataset for the task of grounded commonsense inference, which
+unifies natural language inference and physically grounded reasoning [33]. SWAG consists of 113k
+multiple choice questions about grounded situations.
+
+- CoNLL 2003 [34] is an English dataset consisting of text from a wide variety of sources. It has 4
+types of named entities.
+
+### Pre-trained Models Used Here 
 
 |Model        | Vocabulary Size|Backbone Parameters(M)| Hidden Size | Layers|  Attention Heads|
 |-------------|------|---------|-----|-----|---------|
@@ -20,20 +48,6 @@ We insert gate with inhibition into these below four language models. You can do
 |[RoBERTa-Large](https://huggingface.co/roberta-large)|50265|355|1024| 24| 16|
 |[DeBERTa-V2-Large](https://huggingface.co/microsoft/deberta-large)|128100|304|1024| 24| 16|
 |[DeBERTa-V3-Large](https://huggingface.co/microsoft/deberta-v3-large)|128100|304|1024| 24| 16|
-
-
-
-
-
-
-# Try Gate With Inhbition When Fine-Tuning
-
-
-
-## Get Started
-- Install Python 3.9, PyTorch 1.9.0 and packages ``` pip install -r requirements.txt ```.
-- Download data. You can obtain all the six benchmarks from Tsinghua Cloud or Google Drive. All the datasets are well pre-processed and can be used easily.
-Train the model. We provide the experiment scripts of all benchmarks under the folder ./scripts. You can reproduce the experiment results by:
 
  
 
