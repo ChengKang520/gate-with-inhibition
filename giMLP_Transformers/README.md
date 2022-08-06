@@ -213,11 +213,11 @@ For glue tasks, run task
 
 ``` bash
 #SBATCH --time=72:00:00
-#SBATCH --gres=gpu:4
+#SBATCH --gres=gpu:8
 #SBATCH --mem-per-gpu=32000
-#SBATCH --job-name=giDeBERTa30_Last6
-#SBATCH --err=giDeBERTa30_Last6.err 
-#SBATCH --out=giDeBERTa30_Last6.out 
+#SBATCH --job-name=giDeBERTa30
+#SBATCH --err=giDeBERTa30.err 
+#SBATCH --out=giDeBERTa30.out 
 
 /bin/hostname
 srun -l /bin/hostname
@@ -225,15 +225,15 @@ srun -l /bin/pwd
 ml PyTorch/1.10.0-foss-2021a-CUDA-11.3.1
 cd /home/user/gate_inhibition/python_script/DeBERTa-GLUE/
 source EnvAMD/bin/activate
-python transformers/examples/pytorch/text-classification/run_glue.py --model_name_or_path microsoft/deberta-v3-large --task_name cola --do_train --do_eval --num_train_epochs 10 --overwrite_output_dir --output_dir output_final/DeBERTa_30_on_Last6/CoLA/
-python transformers/examples/pytorch/text-classification/run_glue.py --model_name_or_path microsoft/deberta-v3-large --task_name mrpc --do_train --do_eval --num_train_epochs 10 --overwrite_output_dir --output_dir output_final/DeBERTa_30_on_Last6/MRPC/
-python transformers/examples/pytorch/text-classification/run_glue.py --model_name_or_path microsoft/deberta-v3-large --task_name rte --do_train --do_eval --num_train_epochs 10 --overwrite_output_dir --output_dir output_final/DeBERTa_30_on_Last6/RTE/
-python transformers/examples/pytorch/text-classification/run_glue.py --model_name_or_path microsoft/deberta-v3-large --task_name wnli --do_train --do_eval --num_train_epochs 10 --overwrite_output_dir --output_dir output_final/DeBERTa_30_on_Last6/WNLI/
-python transformers/examples/pytorch/text-classification/run_glue.py --model_name_or_path microsoft/deberta-v3-large --task_name stsb --do_train --do_eval --num_train_epochs 10 --overwrite_output_dir --output_dir output_final/DeBERTa_30_on_Last6/STSB/
-python transformers/examples/pytorch/text-classification/run_glue.py --model_name_or_path microsoft/deberta-v3-large --task_name qqp --do_train --do_eval --num_train_epochs 10 --overwrite_output_dir --output_dir output_final/DeBERTa_30_on_Last6/QQP/
-python transformers/examples/pytorch/text-classification/run_glue.py --model_name_or_path microsoft/deberta-v3-large --task_name mnli --do_train --do_eval --num_train_epochs 10 --overwrite_output_dir --output_dir output_final/DeBERTa_30_on_Last6/MNLI/
-python transformers/examples/pytorch/text-classification/run_glue.py --model_name_or_path microsoft/deberta-v3-large --task_name qnli --do_train --do_eval --num_train_epochs 10 --overwrite_output_dir --output_dir output_final/DeBERTa_30_on_Last6/QNLI/
-python transformers/examples/pytorch/text-classification/run_glue.py --model_name_or_path microsoft/deberta-v3-large --task_name sst2 --do_train --do_eval --num_train_epochs 10 --overwrite_output_dir --output_dir output_final/DeBERTa_30_on_Last6/SST2/
+python transformers/examples/pytorch/text-classification/run_glue.py --model_name_or_path microsoft/deberta-v3-large --task_name cola --do_train --do_eval --num_train_epochs 10 --overwrite_output_dir --output_dir output_final/DeBERTa_30/CoLA/
+python transformers/examples/pytorch/text-classification/run_glue.py --model_name_or_path microsoft/deberta-v3-large --task_name mrpc --do_train --do_eval --num_train_epochs 10 --overwrite_output_dir --output_dir output_final/DeBERTa_30/MRPC/
+python transformers/examples/pytorch/text-classification/run_glue.py --model_name_or_path microsoft/deberta-v3-large --task_name rte --do_train --do_eval --num_train_epochs 10 --overwrite_output_dir --output_dir output_final/DeBERTa_30/RTE/
+python transformers/examples/pytorch/text-classification/run_glue.py --model_name_or_path microsoft/deberta-v3-large --task_name wnli --do_train --do_eval --num_train_epochs 10 --overwrite_output_dir --output_dir output_final/DeBERTa_30/WNLI/
+python transformers/examples/pytorch/text-classification/run_glue.py --model_name_or_path microsoft/deberta-v3-large --task_name stsb --do_train --do_eval --num_train_epochs 10 --overwrite_output_dir --output_dir output_final/DeBERTa_30/STSB/
+python transformers/examples/pytorch/text-classification/run_glue.py --model_name_or_path microsoft/deberta-v3-large --task_name qqp --do_train --do_eval --num_train_epochs 10 --overwrite_output_dir --output_dir output_final/DeBERTa_30/QQP/
+python transformers/examples/pytorch/text-classification/run_glue.py --model_name_or_path microsoft/deberta-v3-large --task_name mnli --do_train --do_eval --num_train_epochs 10 --overwrite_output_dir --output_dir output_final/DeBERTa_30/MNLI/
+python transformers/examples/pytorch/text-classification/run_glue.py --model_name_or_path microsoft/deberta-v3-large --task_name qnli --do_train --do_eval --num_train_epochs 10 --overwrite_output_dir --output_dir output_final/DeBERTa_30/QNLI/
+python transformers/examples/pytorch/text-classification/run_glue.py --model_name_or_path microsoft/deberta-v3-large --task_name sst2 --do_train --do_eval --num_train_epochs 10 --overwrite_output_dir --output_dir output_final/DeBERTa_30/SST2/
 ```
 
 
