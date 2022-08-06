@@ -4,7 +4,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 ![Python 3.8](https://img.shields.io/badge/python-3.8-green.svg)
 
-This is a PyTorch implementation of the paper [giMLPs: Gate with Inhibition Mechanism in MLPs](https://arxiv.org/abs/2107.10224).
+This is a PyTorch implementation of the paper [giMLPs: Gate with Inhibition Mechanism in MLPs]().
 
 ## Updates
 - (05/08/2022) Initial release.
