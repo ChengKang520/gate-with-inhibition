@@ -50,8 +50,8 @@ Our pre-trained models are packaged into zipped files. You can download them fro
 There are several fine-tuning strategies on using Gate With Inhibition mechanism:  
 - {"gi_key_side": true,} means inserting gi into attention block's Key side is TRUE; 
 - {"gi_query_side": true,} means inserting gi into attention block's Query side is TRUE;
-- {"inhibition_level": 0.3,} means the inhibition level is 30%;
-- {"gi_layer_num": 24,} means insert gi into how many last layers.
+- {"inhibition_level": 0.3,} means that the inhibition level is 30%;
+- {"gi_layer_num": 24,} means inserting gi into how many last layers.
 
 
 ``` Python
