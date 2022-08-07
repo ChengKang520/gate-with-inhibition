@@ -269,7 +269,7 @@ We present the dev results on SQuAD 1.1/2.0 and several GLUE benchmark tasks.
 | [DeBERTa-XLarge](https://huggingface.co/microsoft/deberta-xlarge)| -/-  | -/-  | 91.5/91.2| 97.0 | - | -    | 93.1   | 92.1/94.3    | -    |92.9/92.7|
 | [DeBERTa-V2-XLarge](https://huggingface.co/microsoft/deberta-v2-xlarge)|**95.8/90.8**| 91.4/88.9|91.7/91.6| **97.5**| 95.8|71.1|**93.9**|92.0/94.2|92.3/89.8|92.9/92.9|
 |[DeBERTa-V3-Large](https://huggingface.co/microsoft/deberta-v3-large)|-/-|91.5/89.0|**91.8/91.9**|96.9|**96.0**|75.3| 92.7| 92.2/-|93.0/- |93.0/- |
-| **giDeBERTaV3 <sup>1</sup>**|95.5/89.5|**91.6/89.0**|91.1/91.1|96.9|**96.0**|**76.5**|92.1|**93.1/-**|**93.2/-**|**93.2/-**|
+| **giDeBERTaV3 <sup>1</sup>**|**95.8/90.1**|**91.6/89.0**|91.1/91.1|96.9|**96.0**|**76.5**|92.1|**93.1/-**|**93.2/-**|**93.2/-**|
 
 
 --------
