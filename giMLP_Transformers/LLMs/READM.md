@@ -83,7 +83,6 @@ To serve your own model service through API & simple website UI!
 
 1. Model API
 
-    ![](https://i.imgur.com/lkJnZ92.png)
 
     ```bash
     $ cd serve/
@@ -92,7 +91,6 @@ To serve your own model service through API & simple website UI!
 
 2. demo UI
 
-    ![](https://i.imgur.com/SnihV9H.png)
 
     ```bash
     $ cd serve/
